@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FuncionarioFormComponent } from './components/funcionario-form/funcionario-form.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { HomeComponent } from './pages/home/home.component';
+import { EditarComponent } from './pages/editar/editar.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HomeComponent } from './pages/home/home.component';
     HomeComponent,
     CadastroComponent,
     FuncionarioFormComponent,
+    EditarComponent,
   ],
   imports: [
     BrowserModule,
