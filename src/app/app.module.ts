@@ -6,8 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FuncionarioFormComponent } from './components/funcionario-form/funcionario-form.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
-import { HomeComponent } from './pages/home/home.component';
+import { DetalhesComponent } from './pages/detalhes/detalhes.component';
 import { EditarComponent } from './pages/editar/editar.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { EditarComponent } from './pages/editar/editar.component';
     CadastroComponent,
     FuncionarioFormComponent,
     EditarComponent,
+    DetalhesComponent,
   ],
   imports: [
     BrowserModule,

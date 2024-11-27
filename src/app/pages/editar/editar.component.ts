@@ -22,11 +22,9 @@ export class EditarComponent implements OnInit {
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
 
-    if (id) {
-      this.funcionarioService.GetFuncionarioById(id).subscribe((response) => {
-        this.funcionario = response.dados;
-      });
-    }
+    this.funcionarioService.GetFuncionarioById(id).subscribe((response) => {
+      this.funcionario = response.dados;
+    });
   }
 
   updateFuncionario(funcionario: Funcionario) {
