@@ -2,21 +2,61 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 html,
 body {
   width: 100vw;
   height: 100vh;
-  font-size: 62.5%;
+  overflow: hidden;
 }
 
-.container {
-  width: 100%;
+mat-card {
+  width: 80%;
   height: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 3rem;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.input-box {
+  width: 500px;
+}
+
+.btn-box {
+  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-box button {
+  width: 50%;
+}
+
+.funcionario-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mat-table {
+  width: 100%;
 }

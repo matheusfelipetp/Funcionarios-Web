@@ -1,0 +1,16 @@
+<div *ngIf="funcionario">
+  <h1>Deseja confirmar a exclusão?</h1>
+
+  <div>
+    <h3 style="font-style: bold;">Funcionário:</h3>
+    <p>{{funcionario.nome}}</p>
+
+    <h3 style="font-style: bold;">Departamento:</h3>
+    <p>{{funcionario.departamento}}</p>
+  </div>
+
+  <div>
+    <button mat-raised-button color="warn" style="width: 100%;" (click)="excluirFuncionario()">Confirmar exclusão</button>
+    <button mat-raised-button style="width: 100%; margin-top: 10px;" (click)="fecharModal()">Voltar</button>
+  </div>
+</div>
